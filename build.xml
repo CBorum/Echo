@@ -10,6 +10,12 @@
 <project name="EchoServer" default="default" basedir=".">
     <description>Builds, tests, and runs the project EchoServer.</description>
     <import file="nbproject/build-impl.xml"/>
+    <target name="-post-compile">
+        <copy file="startserver.sh" todir="${dist.dir}"/>
+        <copy file="startclient.sh" todir="${dist.dir}"/>
+        <copy file="startserver.bat" todir="${dist.dir}"/>
+        <copy file="startclient.bat" todir="${dist.dir}"/>
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
