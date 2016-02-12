@@ -1,0 +1,2 @@
+Feb 12, 2016 2:21:29 PM echoserver.EchoServer main
+INFO: Starting the Server
